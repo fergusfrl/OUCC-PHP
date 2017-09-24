@@ -1,0 +1,350 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Open-sans', sans-serif;
+  font-size: 17px;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  margin: auto;
+}
+
+/* COMMON CLASSES */
+.primary-text {
+  color: #56a79a;
+}
+
+.primary-background {
+  background: #56a79a;
+}
+
+/* HEADER */
+#main-header {
+  color: #333;
+  border-bottom: 1px solid #56a79a;
+}
+
+#main-header h1 {
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+/* LOGO NOT CURRENTLY IN USE
+#main-header .logo {
+  height: 50px;
+  width: 50px;
+  padding-left: 20px;
+}
+*/
+
+/* NAVBAR */
+#navbar {
+  text-transform: uppercase;
+}
+
+#navbar li {
+  display: inline;
+  padding-right: 20px;
+  list-style: none;
+}
+
+#navbar .main-nav {
+  text-decoration: none;
+  color: #888;
+}
+
+#navbar .current .main-nav, #navbar .main-nav:hover {
+  color: #56a79a;
+  border-bottom: 3px solid #56a79a;
+  padding-bottom: 3px;
+}
+
+/* DROPDOWN MENUS */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 200px;
+  margin-top: 3px;
+  /*margin-top: 23px*/
+  z-index: 1;
+  opacity: 0.9;
+  text-align: left;
+  text-decoration: none;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  color: #56a79a;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flow-root;
+}
+
+/* SHOWCASE */
+#showcase {
+  border-bottom: 1px solid #56a79a;
+  margin-bottom: 30px;
+}
+
+#showcase .row {
+  height: 91vh;
+}
+
+#showcase h1 {
+  font-size: 50px;
+  margon: 0;
+  padding-bottom: 0;
+}
+
+#showcase p {
+  color: #ccc;
+  margin: 0;
+}
+
+#showcase .showcase-content {
+  background: #333;
+  color: #fff;
+  border-radius: 90px;
+  padding: 10px;
+  opacity: 0.9;
+}
+
+/* CORE FEATURES */
+#features h2 {
+  font-size: 35px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+#features p {
+  color: #888;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+#features .fa {
+  font-size: 60px;
+  color: #56a79a;
+}
+
+/* INFO */
+#info {
+  color: #fff;
+}
+
+/* Parallax Effect on Images*/
+.pimg1, .pimg2 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+}
+
+.pimg1 {
+  background-image: url('../img/OUCC-Leith-Photo.jpg');
+  background-position: bottom;
+  /*min-height: 91vh;*/
+  opacity: 0.85;
+}
+
+.pimg2 {
+  min-height: 500px;
+  opacity: 0.85;
+  transition: 2s;
+}
+
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 480px 2px 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 2s ease;
+}
+
+.active {
+  background-color: #56a79a;
+}
+
+/* COMPANY */
+#company {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+#company h4 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+#company p {
+  font-size: 13px;
+}
+
+#company ul {
+  padding: 0;
+  list-style: none;
+  line-height: 2em;
+}
+
+#company ul li {
+  font-size: 13px;
+}
+
+#company ul li a, #company ul li a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+#company input[type=text] {
+  padding: 7px;
+  width: 16em;
+}
+
+#company button {
+  background: #222;
+  color: #fff;
+  padding: 9px;
+  border: 0;
+}
+
+#company .company-about p{
+  padding-right: 80px;
+}
+
+/* FOOTER */
+#main-footer {
+  background: #56a79a;
+  color: #fff;
+}
+
+/* PAGE */
+#page {
+  margin-bottom: 40px;
+}
+
+/* ABOUT */
+
+
+/* EVENTS */
+.events ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+.fc-today {
+  border-top: 4px solid #56a79a !important;
+  background-color: none;
+}
+
+.fc-event {
+  font-size: 18px !important;
+  text-align: center;
+  cursor: default !important;
+  opacity: 0.8;
+}
+
+.events h4 {
+  color: #000;
+  margin: 22px;
+}
+
+/* BLOG */
+#browse a {
+  text-decoration: none;
+}
+
+#browse .image {
+  height: 220px;
+  width: 350px;
+  overflow: hidden;
+}
+
+#browse h4 {
+  color: #111;
+  margin: 0 0 40px 0;
+  padding-top: 10px;
+}
+
+/* CONTACT */
+.contact form {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.contact form input[type="text"] {
+  width: 50%;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.contact textarea {
+  width: 50%;
+  height: 100px;
+}
+
+.contact form button {
+  width: 50%;
+  padding: 10px 0;
+  border: 0;
+  background: #222;
+  color: #fff;
+}
+
+.contact form label {
+  text-transform: uppercase;
+}
+
+/* MEDIA QUERIES */
+@Media(max-width: 1500px) {
+  #main-header h1 {
+    font-size: 30px;
+  }
+}
+
+@Media(max-width: 1350px) {
+  #main-header h1 {
+    font-size: 25px;
+  }
+}
+
+@Media(max-width: 800px) {
+  #showcase h1{
+    font-size: 30px;
+  }
+}
+
+@Media(max-width 500px) {
+  #showcase .showcase-content {
+    padding: 40px 10px;
+  }
+}
